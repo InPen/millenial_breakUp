@@ -1,4 +1,4 @@
-<% project_name = 'rails-api-template' %>
+<% project_name = 'millenial-break-up' %>
 
 default: &default
   adapter: postgresql
