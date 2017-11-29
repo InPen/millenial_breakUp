@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   # post routes
 
   get '/posts' => 'posts#index'
+  get '/posts/:id' => 'posts#show'
   # resources :posts, only: %i[]
 end
