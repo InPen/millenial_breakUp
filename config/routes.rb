@@ -16,5 +16,6 @@ Rails.application.routes.draw do
   get '/posts' => 'posts#index'
   get '/posts/:id' => 'posts#show'
   delete '/posts/:id' => 'posts#destroy'
+  patch '/posts/:id' => 'posts#update'
   # resources :posts, only: %i[]
 end
