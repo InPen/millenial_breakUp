@@ -26,5 +26,6 @@ Rails.application.routes.draw do
   get '/profiles/:id' => 'profiles#show'
   delete '/profiles/:id' => 'profiles#destroy'
   patch '/profiles/:id' => 'profiles#update'
+  post '/profiles/' => 'profiles#create'
   # resources :profiles, only: %i[index show]
 end

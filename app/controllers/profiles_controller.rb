@@ -30,6 +30,16 @@ class ProfilesController < ApplicationController
     end
   end
 
+  def create
+    @profile = Profile.new(profile_params)
+
+    if @profile.save
+      render json: @profile
+    else
+      render json: @profile.errors, status: :unprocessable_entity
+    end
+  end
+
   def profile_params
     params.require(:profile).permit(:quote, :handle)
   end
