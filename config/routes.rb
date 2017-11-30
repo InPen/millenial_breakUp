@@ -23,5 +23,6 @@ Rails.application.routes.draw do
   # profile routes
 
   get '/profiles' => 'profiles#index'
+  get '/profiles/:id' => 'profiles#show'
   # resources :profiles, only: %i[index show]
 end
