@@ -19,4 +19,13 @@ Rails.application.routes.draw do
   patch '/posts/:id' => 'posts#update'
   post '/posts/' => 'posts#create'
   # resources :posts, only: %i[]
+
+  # profile routes
+
+  get '/profiles' => 'profiles#index'
+  get '/profiles/:id' => 'profiles#show'
+  delete '/profiles/:id' => 'profiles#destroy'
+  patch '/profiles/:id' => 'profiles#update'
+  post '/profiles/' => 'profiles#create'
+  # resources :profiles, only: %i[index show]
 end
