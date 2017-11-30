@@ -14,4 +14,9 @@ class ProfilesController < ApplicationController
 
     render json: @profile
   end
+
+  def destroy
+    @profile = Profile.find(params[:id])
+    @profile.destroy
+  end
 end
